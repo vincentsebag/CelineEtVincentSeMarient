@@ -1,8 +1,33 @@
 <!DOCTYPE html>
+
+<style>
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.myimg {
+    height: inherit;
+}
+</style>
 <html lang="en-us" >
  <body> 
  Hello On va se marier :) 
-  <img src = "img/LesChrisontqqcavousdire.png">
- 2
+  <div class="fixed-background">
+        <img src="img/LesChrisontqqcavousdire.png" class="myimg" />
+    </div>
+  
  </body>
  </html>
+
