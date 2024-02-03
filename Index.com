@@ -37,7 +37,7 @@
         <div class="content cover text-center">
           <div class="row">
             <div class="col-lg-12">
-              <h1 class="animated hiding" data-animation="fadeInDown" data-delay="300">Welcome to Deep Intel</h1>
+              <h1 class="animated hiding" data-animation="fadeInDown" data-delay="300">AWelcome to Deep Intel</h1>
               <!-- <a class="btn btn-blue nav-external animated hiding" data-animation="fadeIn"  href="#solution" data-delay="200">Find more</a>
 -->
                <a class="btn btn-blue animated hiding" data-animation="fadeIn"  href="#solution" data-delay="200">Find more</a>
