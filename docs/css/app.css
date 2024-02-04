@@ -18,10 +18,7 @@ body::-webkit-scrollbar {
     color: #ffffff !important;
 }
 
-.font-arabic {
-    font-family: 'Noto Naskh Arabic', serif !important;
-    color: #ffffff !important;
-}
+
 
 .img-crop {
     width: 14rem;
@@ -50,7 +47,22 @@ body::-webkit-scrollbar {
     inset: 0 !important;
     width: 100%;
     height: 100%;
-    background-color: #8de8ad; /* 111111*/
+  
+    background-color: #8de8ad; /*  111111*/
+    z-index: 1057 !important;
+}
+
+.welcome-page {
+    position: fixed;
+    inset: 0 !important;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://picsum.photos/1280/720?random=6');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    /*background-color: #8de8ad;  111111*/
     z-index: 1056 !important;
 }
 
