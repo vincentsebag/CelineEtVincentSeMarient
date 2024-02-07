@@ -62,6 +62,31 @@ body::-webkit-scrollbar {
 
 
     background: skyblue;
+    background: url("../assets/images/SmallBackground.jpg");
+    background: -webkit-image-set(
+      url("../assets/images/SmallBackground.jpg") 1x,
+      url("../assets/images/BigBackground.jpg") 2x);
+    background: image-set(
+        url("../assets/images/SmallBackground.jpg") 1x,
+        url("../assets/images/BigBackground.jpg") 2x);
+    background: image-set(
+    url("../assets/images/SmallBackground.jpg") 750w,
+    url("../assets/images/BigBackground.jpg") 20480w);
+  
+    position: fixed;
+    inset: 0 !important;
+    background-repeat: no-repeat; 
+    width :  100vw; 
+    max-width: 100vw !important;
+    max-height: 100vh ;
+    
+    background-size: cover !important;
+    background-position: center !important;
+    z-index: 1056 !important;
+}
+
+/* 
+background: skyblue;
     background-image: url("../assets/images/SmallBackground.jpg");
     background-image: -webkit-image-set(
       url("../assets/images/SmallBackground.jpg") 1x,
@@ -83,12 +108,9 @@ body::-webkit-scrollbar {
     background-size: cover !important;
     background-position: center !important;
     z-index: 1056 !important;
-}
 
-/* 
- background-image: url('../assets/images/Background.jpg');
-background: -webkit-image-set( url('path/to/image') 1x, url('path/to/high-res-image') 2x );
-width: 100%;*/
+
+*/
 
 .card-body {
     overflow-wrap: break-word !important;
