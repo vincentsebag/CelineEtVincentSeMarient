@@ -62,7 +62,7 @@ body::-webkit-scrollbar {
     position: fixed;
     inset: 0 !important;
    
-    max-height: 90%;
+    height: 800px;
     background-image: url('../assets/images/Background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
