@@ -62,15 +62,15 @@ body::-webkit-scrollbar {
 
 
     background: skyblue;
-    background-image: url("../assets/images/smallItalie.jpg");
+    background-image: url("../assets/images/SmallBackground.jpg");
     background-image: -webkit-image-set(
-      url("../assets/images/smallItalie.jpg") 1x,
+      url("../assets/images/SmallBackground.jpg") 1x,
       url("../assets/images/BigBackground.jpg") 2x);
     background-image: image-set(
-        url("../assets/images/smallItalie.jpg") 1x,
+        url("../assets/images/SmallBackground.jpg") 1x,
         url("../assets/images/BigBackground.jpg") 2x);
     background-image: image-set(
-    url("../assets/images/smallItalie.jpg") 750w,
+    url("../assets/images/SmallBackground.jpg") 750w,
     url("../assets/images/BigBackground.jpg") 20480w);
   
     position: fixed;
