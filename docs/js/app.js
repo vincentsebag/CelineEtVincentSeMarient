@@ -180,7 +180,7 @@ const progress = (() => {
         loaded += 1;
 
         bar.style.width = Math.min((loaded / total) * 100, 100).toString() + "%";
-        info.innerText = `Le pigeon voyageur arrive dans (${loaded}/${total}) [${parseInt(bar.style.width).toFixed(0)}%]`;
+        info.innerText = `Le pigeon voyageur arrive dans ${loaded}/${total} [${parseInt(bar.style.width).toFixed(0)}%]`;
 
         if (loaded == total) {
             util.show();
