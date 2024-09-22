@@ -1,0 +1,216 @@
+<!doctype html>
+<html ng-app='sampleApp' lang="id" data-bs-theme="dark" >
+    
+
+
+<!-- Petit coquin, si tu es la, tu cherches peut etre des informations supplementaires sur le mariage. 
+    Garde en tete le nombre 719 et prend un screenshot de cette page, il te sera peut etre utile plus tard. 
+-->
+
+
+<head>
+    <!-- Common Tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Celine et Vincent se marient en 2025</title>
+
+
+    <!-- Appearance -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Celine et Vincent se marient en 2025">
+    <meta name="theme-color" content="#111111">
+    <meta name="color-scheme" content="light">
+    <link rel="canonical" href="https://celineetvincentsemarient.fr">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/Wedding3x_42241.ico">
+    <link rel="apple-touch-icon" sizes="192x192" type="image/png" href="./assets/images/Wedding3x_42241.png">
+    <link rel="icon" type="image/x-icon" href="./assets/images/Wedding3x_42241.ico">
+
+    <!-- Preconnect and preload CDN -->
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+        integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha256-MBffSnbbXwHCuZtgPYiwMQbfE7z+GOZ7fBPCNB06Z98=" crossorigin="anonymous" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
+        integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+        integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha256-gvZPYrsDwbwYJLD5yeBfcNujPhRoGOY831wwbIzz3t0=" crossorigin="anonymous" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"
+        integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c=" crossorigin="anonymous" as="script">
+    <link rel="preload"
+        href="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"
+        integrity="sha256-XG5M9shcLLpu8ct5bVbu6lLVzLpfZChl+csxdyLVP18=" crossorigin="anonymous" as="script">
+
+    <!-- Dependencies CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+        integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha256-MBffSnbbXwHCuZtgPYiwMQbfE7z+GOZ7fBPCNB06Z98=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
+        integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+        integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap">
+    <!-- Josefin+Sans-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap">
+
+    <!-- App -->
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/app.js" defer></script>
+
+
+
+    <!--    ng -->
+    <link data-require="bootstrap-css" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular.js" data-semver="1.4.9"></script>
+    <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular-route.js" data-semver="1.4.9"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/HeaderController.js"></script> 
+
+</head>
+
+<body style="overflow-y: hidden;">
+
+    <img src="./assets/images/Background.jpg" style="display: none;">
+    <img src="./assets/images/Italie.jpg" style="display: none;">
+
+    
+   
+    
+        <nav ng-controller="HeaderController" class="navbar navbar-dark  navbar-expand fixed-top rounded-top-4 p-0" id="navbar-menus"
+        style="background-color: #111111;">
+
+        
+        <ul class="navbar-nav nav-justified w-100 align-items-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#Accueil">
+                    <i class="fas fa-home"></i>
+                    <span class="d-block" style="font-size: 0.7rem;">Accueil</span>
+                </a>
+            </li>
+            <li ng-class="{ active: isActive('/about')}" class="nav-item">
+                <a class="nav-link" href="#/about">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span class="d-block" style="font-size: 0.7rem;">Hebergement</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Nous">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span class="d-block" style="font-size: 0.7rem;">Nous</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Ladate">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span class="d-block" style="font-size: 0.7rem;">Quand</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#galerie">
+                    <i class="fa-solid fa-images"></i>
+                    <span class="d-block" style="font-size: 0.7rem;">Galerie</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Contact">
+                    <i class="fa-solid fa-comments"></i>
+                    <span class="d-block" style="font-size: 0.7rem;">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+        
+      
+    <ng-view></ng-view>
+
+
+    <!-- Welcome Page -->
+    <div class="welcome-page" id="welcome" style="opacity: 1;">
+        <div class="d-flex justify-content-center align-items-center">
+
+
+
+            <div class="text-center">
+                <div id="debut-invitation">
+                    <h1 class="font-esthetic mb-4" id="texte-invitation"
+                        style="font-size: 4rem; color: #111111 !important;"> On a un
+                        secret pour vous...
+                </h1>
+            </div>
+
+
+
+                <div class="img-crop border border-3 border-light shadow mb-4 mx-auto">
+                    <img src="./assets/images/Secret.JPEG" alt="bg">
+                </div>
+                <div id="nom-invitation"></div>
+
+                <button type="button" class="btn btn-light shadow rounded-4 mt-4" onclick="util.ouvrir(this)"
+                    style="font-size: 1rem;">
+                    <i class="fa-solid fa-envelope-open me-2 "></i>Ouvrir le message
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Button -->
+    <button type="button" id="musique" style="display: none;" class="btn btn-light btn-sm rounded-circle btn-music"
+        onclick="util.music(this)" data-status="true" data-url="./assets/music/sound.mp3">
+        <i class="fa-solid fa-circle-pause spin-button"></i>
+    </button>
+
+    <!-- Loading page -->
+    <div class="loading-page" id="loading" style="opacity: 1;">
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh !important;">
+            <div class="text-center w-75">
+                <img class="img-fluid mb-3" src="./assets/images/dove_746169.png" alt="icon" style="width: 3.5rem;">
+                <div class="progress" role="progressbar" style="height: 0.5rem;">
+                    <div class="progress-bar" id="bar" style="width: 0%"></div>
+                </div>
+                <small class="mt-1 text-light" id="progress-info" style="display: none;font-size: 1.5rem;">Le pigeon
+                    voyageur charge...</small>
+
+                <script>
+                    document.getElementById('progress-info').style.display = 'block';
+                </script>
+                <noscript>
+                    <small class="mt-1 text-danger">Désolé, cette invitation nécessite javascript</small>
+                </noscript>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Photo Large -->
+    <div class="modal fade" id="modal-image" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+                        <img src="./assets/images/bg.jpeg" class="w-100" alt="foto" id="show-modal-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dependencies JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha256-gvZPYrsDwbwYJLD5yeBfcNujPhRoGOY831wwbIzz3t0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"
+        integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"
+        integrity="sha256-XG5M9shcLLpu8ct5bVbu6lLVzLpfZChl+csxdyLVP18=" crossorigin="anonymous"></script>
+</body>
+
+</html>
