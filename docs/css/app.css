@@ -180,11 +180,17 @@ body::-webkit-scrollbar {
     animation: love 5s ease-in-out infinite;
 }
 
+.clear-section {
+   
+    margin-top: -0rem;
+    margin-bottom: -0rem;
+    color: #111111 !important;
+}
 .dark-section {
     background-color: #FFEBDA !important;
     /*  couleur2*/
-    margin-top: -0.5rem;
-    margin-bottom: -0.5rem;
+    margin-top: -0rem;
+    margin-bottom: -0rem;
     color: #111111 !important;
 }
 
