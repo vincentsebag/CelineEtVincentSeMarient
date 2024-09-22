@@ -189,8 +189,8 @@ body::-webkit-scrollbar {
 .dark-section {
     background-color: #FFEBDA !important;
     /*  couleur2*/
-    margin-top: -0rem;
-    margin-bottom: -0rem;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
     color: #111111 !important;
 }
 
