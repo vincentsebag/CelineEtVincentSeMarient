@@ -3,6 +3,17 @@ html {
 
 }
 
+.navbarnew {
+    position: sticky;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #333;
+
+    position: fixed;
+    width: 100%;
+    
+  }
+
 body {
     font-family: 'Philosopher', sans-serif !important;
     color: #111111 !important;
