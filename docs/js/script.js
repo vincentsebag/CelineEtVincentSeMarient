@@ -9,8 +9,17 @@
             .when('/',{
                 templateUrl:'home.html'
             })
-            .when('/about',{
-                templateUrl:'about.html'
+            .when('/programme',{
+                templateUrl:'programme.html'
+            })
+            .when('/logistique',{
+                templateUrl:'logistique.html'
+            })
+            .when('/rsvp',{
+                templateUrl:'rsvp.html'
+            })
+            .when('/listemariage',{
+                templateUrl:'listemariage.html'
             })
             .otherwise({ redirectTo:'/'});
     });
