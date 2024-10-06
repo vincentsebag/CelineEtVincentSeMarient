@@ -24,10 +24,10 @@
             .otherwise({ redirectTo:'/'});
         });
     
-        // Ajout du comportement pour remonter en haut à chaque changement de route
+       
         app.run(function($rootScope) {
             $rootScope.$on('$routeChangeSuccess', function() {
-                // Défile jusqu'en haut de la page (coordonnées x = 0, y = 0)
+              
                 window.scrollTo(0, 0);
             });
         });
