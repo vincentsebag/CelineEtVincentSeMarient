@@ -79,7 +79,7 @@ const util = (() => {
 
         div = document.createElement('div');
         div.classList.add('m-2');
-        div.innerHTML = `<p class="mt-0 mb-1 mx-0 p-0 text-light font-esthetic" style="font-size: 2.5rem; color: #111111 !important;">Pour ${escapeHtml(name)}</p>`;
+        div.innerHTML = `<p class="mt-0 mb-1 mx-0 p-0 text-light font-esthetic" style="font-size: 2.5rem; color: #111111 !important;"> A l'attention de ${escapeHtml(name)}</p>`;
 
         document.getElementById('nom-invitation').appendChild(div);
 
