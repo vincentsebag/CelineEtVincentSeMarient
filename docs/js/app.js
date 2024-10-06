@@ -68,16 +68,10 @@ const util = (() => {
             return;
         }
 
-        document.getElementById('texte-invitation').remove();
+        
 
         let div = document.createElement('div');
-        div.classList.add('m-2');
-        div.innerHTML = `<h1 class="font-esthetic mb-4" id="texte-invitation" style="font-size: 4rem; color: #111111 !important;"> On a un
-        secret...   </h1>  `;
-
-        document.getElementById('debut-invitation').appendChild(div);
-
-        div = document.createElement('div');
+  
         div.classList.add('m-2');
         div.innerHTML = `<p class="mt-0 mb-1 mx-0 p-0 text-light font-esthetic" style="font-size: 2.5rem; color: #111111 !important;"> A l'attention de ${escapeHtml(name)}</p>`;
 
