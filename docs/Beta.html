@@ -186,7 +186,7 @@
       id="navbar-menus"
     >
       <ul class="navbar-nav nav-justified w-100 align-items-center">
-        <li class="nav-item">
+        <li ng-class="{ active: isActive('/home')}" class="nav-item">
           <a class="nav-link" href="#Accueil">
             <i class="fas fa-home"></i>
             <span class="d-block" style="font-size: 1rem">Accueil</span>
@@ -199,28 +199,22 @@
             <span class="d-block" style="font-size: 1rem">Programme</span>
           </a>
         </li>
-        <!--
-            <li class="nav-item">
-                <a class="nav-link" href="#programme">
-                    <i class="fas fa-home"></i>
-                    <span class="d-block" style="font-size: 0.7rem;">Programme</span>
-                </a>
-            </li>
-            
+  
+       
         <li class="nav-item">
           <a class="nav-link" href="#logistique">
             <i class="fa-solid fa-person-walking-luggage"></i>
             <span class="d-block" style="font-size: 1rem">Logistique</span>
           </a>
         </li>
-        -->
-        <li class="nav-item">
+        
+        <li ng-class="{ active: isActive('/rsvp')}" class="nav-item">
           <a class="nav-link" href="#rsvp">
             <i class="fa-solid fa-envelope-circle-check"></i>
             <span class="d-block" style="font-size: 1rem">RSVP</span>
           </a>
         </li>
-        <li class="nav-item">
+        <li ng-class="{ active: isActive('/listemariage')}" class="nav-item">
           <a class="nav-link" href="#listemariage">
             <i class="fa-solid fa-gifts"></i>
             <span class="d-block" style="font-size: 1rem"

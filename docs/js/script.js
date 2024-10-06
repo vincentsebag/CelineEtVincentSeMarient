@@ -13,7 +13,7 @@
                 templateUrl:'programme.html'
             })
             .when('/logistique',{
-                templateUrl:'logistique.html'
+                templateUrl:'logistique.html#'
             })
             .when('/rsvp',{
                 templateUrl:'rsvp.html'
@@ -22,5 +22,14 @@
                 templateUrl:'listemariage.html'
             })
             .otherwise({ redirectTo:'/'});
-    });
-})();
+        });
+    
+        // Ajout du comportement pour remonter en haut à chaque changement de route
+        app.run(function($rootScope) {
+            $rootScope.$on('$routeChangeSuccess', function() {
+                // Défile jusqu'en haut de la page (coordonnées x = 0, y = 0)
+                window.scrollTo(0, 0);
+            });
+        });
+    
+    })();
