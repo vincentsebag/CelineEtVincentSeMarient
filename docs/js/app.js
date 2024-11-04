@@ -53,11 +53,8 @@ const util = (() => {
         }
     };
 
-    const modal = (img) => {
-        document.getElementById('show-modal-image').src = img.src;
-        (new bootstrap.Modal('#modal-image')).show();
-    };
-
+ 
+   
 
     const affichernom = () => {
         let name = (new URLSearchParams(window.location.search)).get('to');
@@ -155,7 +152,7 @@ const util = (() => {
 
     return {
         ouvrir,
-        modal,
+        
         music,
         show,
         animate

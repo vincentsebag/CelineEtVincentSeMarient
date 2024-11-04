@@ -1,63 +1,545 @@
+<!DOCTYPE html>
 <head>
+  <link rel="stylesheet" href="./css/app.css" />
+  <script src="./js/app.js" defer></script>
+  <meta name="robots" content="noindex" />
+  <title>Céline et Vincent se marient</title>
+</head>
+<body>
+  <section class="top-section-accueil" id="accueil">
+    <div class="text-center pt-4">
+      <h1 class="font-esthetic my-4 text-center top-page-title">Logistique</h1>
+    </div>
+    <div class="top-page-div">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill-opacity="1"
+          d="M 0,400 L 0,150 C 78.01794871794871,122.51794871794871 156.03589743589743,95.03589743589744 246,100 C 335.9641025641026,104.96410256410256 437.874358974359,142.37435897435898 507,156 C 576.125641025641,169.62564102564102 612.4666666666667,159.46666666666667 675,153 C 737.5333333333333,146.53333333333333 826.2589743589745,143.75897435897434 926,153 C 1025.7410256410255,162.24102564102566 1136.4974358974357,183.4974358974359 1224,185 C 1311.5025641025643,186.5025641025641 1375.751282051282,168.25128205128203 1440,150 L 1440,400 L 0,400 Z"
+        ></path>
+      </svg>
+    </div>
+  </section>
 
-    <link rel="stylesheet" href="./css/app.css">
-    <script src="./js/app.js" defer></script>
-    <meta name="robots" content="noindex">
-    </head>    
-    <body>
-    
-        <section class="acceuil2" id="Accueil">
-            <div class="text-center pt-4">
-              <h1
-                class="font-esthetic my-4 text-center"
-                style="
-                  font-size: 4rem;
-                  position: absolute;
-                  top: 30%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                  color: #ffffff !important;
-                "
-              >
-                 Logistique
-              </h1>
+  <section class="light-section" id="intrologistique" style="z-index: 2">
+    <div
+      class="text-center"
+      style="width: 80%; margin-left: auto; margin-right: auto"
+    >
+      <h1
+        class="font-esthetic my-4 text-center text-color-dark"
+        style="position: relative; text-align: center"
+      >
+        Chers tous,
+      </h1>
+      <div style="margin-top: 10px" class="font-size-small">
+        <p>
+          Pour faciliter votre venue, voici quelques informations pour vous
+          aider.
+        </p>
+        <p>
+          Vous trouverez ci-dessous des précisions sur les logements à
+          proximité, les transports pour venir et des idées d’activités pour
+          explorer les environs.
+        </p>
+
+        <div
+          class="logistic-section-links"
+          style="padding-bottom: 25px; padding-top: 20px"
+        >
+          <a
+            href=""
+            ng-click="scrollTo('logement')"
+            class="logistic-section-link"
+            >Logement</a
+          >
+          <a
+            href=""
+            ng-click="scrollTo('transports')"
+            class="logistic-section-link"
+            >Transports</a
+          >
+          <a
+            href=""
+            ng-click="scrollTo('activites')"
+            class="logistic-section-link"
+            >Que faire à côté</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg
+    xmlns="https://www.w3.org/2000/svg"
+    class="svg-top-section"
+    viewBox="0 0 1440 320"
+  >
+    <path
+      id="logement"
+      fill-opacity="1"
+      d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+    ></path>
+  </svg>
+
+  <!-- L'Hebergement  -->
+  <section
+    class="text-center dark-section"
+    data-aos="fade-up"
+    data-aos-duration="2000"
+    style="width: 80%; margin: 0 auto"
+  >
+    <h1 class="font-esthetic py-3 text-color-white">
+      Hébergement (du plus proche au plus loin)
+    </h1>
+
+    <div class="hotel-grid-container">
+      <div class="grid-item font-size-small">
+        <a
+          class="logistic-hotel-names"
+          href="https://ferme-theatre-chapiteau-lommoye.hotelmix.fr"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          <strong class="hotel-name">La Ferme Théâtre Chapiteau</strong> </a
+        ><br />
+        Distance: 6 min à pieds<br />
+        Couchages: 9<br />
+        Contact:
+        <a href="mailto:jeanpaulsingier@hotmail.fr">Cliquez pour contacter</a
+        ><br />
+        Tel: 06 58 25 17 38
+      </div>
+      <div class="grid-item">
+        <a
+          href="https://levalcomtat.com/"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          <strong class="hotel-name">Le Val Comtat à Cravent</strong> </a
+        ><br />
+        Distance: 6 min en voiture<br />
+        Couchages: 14<br />
+        Contact:
+        <a href="mailto:levalcomtat@gmail.com">Cliquez pour contacter</a><br />
+        Tel: 07 44 77 20 32
+      </div>
+      <div class="grid-item">
+        <a
+          href="https://www.alabelleetoiledeparisahonfleur.com/"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          <strong class="hotel-name">A la Belle Etoile à Cravent</strong> </a
+        ><br />
+        Distance: 5 min en voiture<br />
+        Budget: 665€ pour 2 nuits<br />
+        Couchages: 8<br />
+        Contact:
+        <a href="mailto:info@alabelleetoiledeparisahonfleur.com"
+          >Cliquez pour contacter</a
+        ><br />
+        Tel: 02 31 87 60 50
+      </div>
+      <div class="grid-item">
+        <a
+          href="https://www.hotelnympheas.fr/fr"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          <strong class="hotel-name">Hôtel Les Nymphéas **</strong> </a
+        ><br />
+        Distance: 6 min en voiture<br />
+        Budget: 100€ à 120€ par nuit<br />
+        Couchages: 25 chambres<br />
+        Contact:
+        <a href="mailto:contact@hotelnympheas.fr">Cliquez pour contacter</a
+        ><br />
+        Tel: 02 32 21 50 23
+      </div>
+   
+      <div class="grid-item">
+        <a
+          href="https://hotelaltina.com/"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          <strong class="hotel-name">Hôtel Altina **</strong> </a
+        ><br />
+        Distance: 11 min en voiture<br />
+        Budget: 95€ par nuit<br />
+        Couchages: 29 chambres<br />
+        Contact:
+        <a href="mailto:info@hotelaltina.com">Cliquez pour contacter</a><br />
+        Tel: 02 32 21 53 67
+      </div>
+      <div class="grid-item">
+        <a
+          href="https://belami-normandy.com/"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          <strong class="hotel-name">Hôtel Bel Ami****</strong> </a
+        ><br />
+        Distance: 13 min en voiture<br />
+        Budget: 170€ par nuit<br />
+        Couchages: 16 chambres<br />
+        Contact:
+        <a href="mailto:contact@belami-normandy.com">Cliquez pour contacter</a
+        ><br />
+        Tel: 02 32 22 38 00
+      </div>
+      <div class="grid-item">
+        <a
+          href="https://normandy-hotel.fr/"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          <strong class="hotel-name">Hôtel le Normandy***</strong> </a
+        ><br />
+        Distance: 18 min en voiture<br />
+        Budget: À partir de 144€ par nuit<br />
+        Couchages: 50 chambres<br />
+        Contact:
+        <a href="mailto:contact@normandy-hotel.fr">Cliquez pour contacter</a
+        ><br />
+        Tel: 02 32 51 57 66
+      </div>
+      <div class="grid-item">
+        <a
+          href="https://hotel-laruche78.com/"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          <strong class="hotel-name">La Ruche***</strong> </a
+        ><br />
+        Distance: 19 min en voiture<br />
+        Budget: 100€ à 135€ par nuit<br />
+        Couchages: 29 chambres<br />
+        Contact:
+        <a href="mailto:contact@hotel-laruche78.com">Cliquez pour contacter</a
+        ><br />
+        Tel: 01 30 93 69 96
+      </div>
+    </div>
+
+    <a
+      href=""
+      ng-click="scrollTo('top-section-accueil')"
+      class="back-to-top-link"
+      ><i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </section>
+
+  <svg
+    id="transports"
+    xmlns="https://www.w3.org/2000/svg"
+    style="margin-bottom: -2rem"
+    viewBox="0 0 1440 320"
+  >
+    <path
+      fill-opacity="1"
+      d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+    ></path>
+  </svg>
+  <!-- Section Transports  -->
+  <section class="light-section text-center">
+    <div
+      class="font-size-small"
+      style="width: 80%; margin-left: auto; margin-right: auto"
+    >
+      <!-- Intro transport-->
+      <div data-aos="fade-up" data-aos-duration="2000">
+        <h1 class="font-esthetic text-color-dark">Comment venir</h1>
+
+        <div style="margin-top: 10px">
+          <p>
+            Afin de faciliter votre venue, voici quelques élements pouvant aider
+            votre logistique pour arriver et repartir.
+          </p>
+        </div>
+      </div>
+
+      <!--  Collapasbles Transport -->
+      <div style="overflow: hidden">
+        <!-- Transport mairie-->
+        <div
+          class="collapsible-section"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <details>
+            <summary>
+              <span class="summary-icon"></span>
+              Mairie du 11<sup>e</sup> arrondissement de Paris
+            </summary>
+            <div class="content">
+              <p><strong>Adresse :</strong> 12 Place Léon Blum, 75011 Paris</p>
+              <p class="font-esthetic text-color-dark">・┈┈・</p>
+              <div class="columns">
+                <div
+                  class="column"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                >
+                  <h3><i class="fas fa-subway"></i> Métro</h3>
+                  <p>
+                    <strong>Voltaire</strong> (ligne 9) : La station la plus
+                    proche, située juste en face de la mairie.
+                  </p>
+                </div>
+                <div
+                  class="column"
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                >
+                  <h3><i class="fas fa-car"></i> Voiture</h3>
+                  <p>
+                    <strong>Parking Indigo Paris Voltaire Léon Blum</strong
+                    ><br />
+                    Situé au 15 Place Léon Blum, juste à côté de la mairie.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div style="position: absolute; height: auto; width: 100%; bottom:0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1440 320"
-                style="
-                  margin-bottom: 0rem;
-                  width: 100%;
-      
-                  display: block;
-                "
-              >
-                <path
-                  fill="#ffbe85"
-                  fill-opacity="1"
-                  d="M 0,400 L 0,150 C 78.01794871794871,122.51794871794871 156.03589743589743,95.03589743589744 246,100 C 335.9641025641026,104.96410256410256 437.874358974359,142.37435897435898 507,156 C 576.125641025641,169.62564102564102 612.4666666666667,159.46666666666667 675,153 C 737.5333333333333,146.53333333333333 826.2589743589745,143.75897435897434 926,153 C 1025.7410256410255,162.24102564102566 1136.4974358974357,183.4974358974359 1224,185 C 1311.5025641025643,186.5025641025641 1375.751282051282,168.25128205128203 1440,150 L 1440,400 L 0,400 Z"
-                ></path>
-              </svg>
-      
+          </details>
+        </div>
+        <!-- Transport Mauvoisin -->
+        <div
+          class="collapsible-section"
+          style="margin-bottom: 10px"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
+          <details>
+            <summary>
+              <span class="summary-icon"></span>
+              Domaine de Mauvoisin
+            </summary>
+            <div class="content">
+              <p>
+                <strong>Adresse :</strong> 6 Route de Mauvoisin, 78270 Lommoye
+              </p>
+              <p class="font-esthetic text-color-dark">・┈┈・</p>
+              <div class="columns">
+                <div
+                  class="column"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                >
+                  <h3><i class="fas fa-car"></i> Voiture</h3>
+                  <p>
+                    <strong>Durée :</strong><br />
+                    Environ 1h depuis l'ouest de Paris (sans bouchons)
+                  </p>
+                  <p>
+                    <strong>Covoiturage :</strong><br />Si vous souhaitez
+                    partager le trajet avec d'autres invités, nous serons ravis
+                    de vous mettre en relation. <br />N'hésitez pas à nous
+                    contacter pour organiser le covoiturage et faciliter vos
+                    déplacements.
+                  </p>
+                </div>
+                <div class="column" data-aos="fade-up" data-aos-duration="2000">
+                  <h3><i class="fas fa-train"></i> Train</h3>
+                  <p>
+                    <strong>Gare la plus proche :</strong><br />
+                    Bonnières-sur-Seine<br />
+                    <strong>Départ :</strong><br />
+                    Paris Saint-Lazare, direction de Vernon–Giverny ou
+                    Rouen-Rive-Droite. <br />
+                    <strong>Durée :</strong> <br />Le trajet dure entre 45
+                    minutes et 1 heure.
+                  </p>
+                  <p>
+                    <strong>De la gare au domaine :</strong> Le Domaine se
+                    trouve à environ 10 km de la gare. Vous pouvez prendre un
+                    taxi pour vous y rendre (environ 15 minutes de trajet).
+                  </p>
+                </div>
+                <div
+                  class="column"
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                >
+                  <h3><i class="fas fa-taxi"></i> Taxis locaux</h3>
+
+                 <p>
+                      <strong>Taxi Bonnières-sur-Seine</strong><br />
+                      06 68 02 80 52
+                    </p><p>
+                      <strong>Taxi Mantes-la-Jolie</strong><br />
+                      01 30 94 75 75 – Allo taxi Mantes<br />
+                      07 75 10 42 82 <br />
+                      06 51 80 89 35
+                    </p><p>
+                      <strong>Taxi Vernon</strong><br />
+                      06 37 10 90 <br />
+                      03 06 42 54 08 68 <br />
+                      06 81 09 00 43
+                    </p><p>
+                      <strong>Taxi Héron</strong><br />
+                      02 57 53 69 20
+                    </p>
+                  <p>
+                    <em class="text-color-dark"
+                      >Il est conseillé de réserver votre taxi à l'avance.</em
+                    >
+                  </p>
+                </div>
+              </div>
             </div>
-            
-        
-          </section>
-      
-          <!-- L'overview programme  -->
-          <section
-            >
-            <h1
-                class="font-esthetic text-center">
-                En construction 
-            </h1>
-        
-      
-       
-        
-         </section>
-    
-    </body>
-        
-    </body>
+          </details>
+        </div>
+      </div>
+    </div>
+    <div>
+      <a
+        href=""
+        ng-click="scrollTo('top-section-accueil')"
+        class="back-to-top-link"
+        ><i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </section>
+
+  <svg
+    id="activites"
+    xmlns="https://www.w3.org/2000/svg"
+    style="margin-bottom: -0rem; margin-top: -1rem"
+    viewBox="0 0 1440 320"
+  >
+    <path
+      fill="#FFEBDA"
+      fill-opacity="1"
+      d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+    ></path>
+  </svg>
+
+  <!-- Section Que faire à côté -->
+  <section
+    class="dark-section text-center"
+    style="margin-top: -50px"
+    data-aos="fade-right"
+    data-aos-duration="2000"
+  >
+    <div style="width: 80%; margin-left: auto; margin-right: auto">
+      <h1 class="font-esthetic text-color-light">Que faire dans le coin</h1>
+      <div style="margin-top: 10px" class="font-size-small">
+        <p>
+          Voici quelques idées d’activités si vous souhaitez prolonger un peu votre séjour :)
+  </p>
+      </div>
+
+      <div ng-controller="LogistiqueController" class="activities-container">
+        <!-- Filtres -->
+        <div class="filter-container">
+          <div
+            class="filter-button font-esthetic"
+            ng-repeat="filter in filters"
+            ng-class="{active: filter.active}"
+            ng-click="toggleFilter(filter)"
+          >
+            <i class="{{filter.icon}}"></i> {{filter.name}}
+          </div>
+        </div>
+
+        <!-- Activités -->
+        <div class="activities-grid">
+          <div
+            class="activity-card"
+            ng-repeat="activity in activities | filter:activityFilter"
+          >
+            <details>
+              <summary class="text-center">
+                <span class="logistic-activity-name font-esthetic font-size"
+                  >{{activity.name}}</span
+                >
+                
+              <span class="category-icons">
+                <i
+                  ng-repeat="category in activity.categories"
+                  class="{{categoryIconMap[category]}}"
+                  aria-hidden="true"
+                  style="color: var(--dark-color); margin-left: 10px"
+                ></i>
+              </span>
+                <span class="summary-icon"></span>
+              </summary>
+              <div class="font-size-small" style="padding: 10px;">
+                <p>
+                  <em class="text-color-dark"
+                    >Distance : {{activity.distance}}</em
+                  >
+                </p>
+                <p>{{activity.description}}</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a
+      href=""
+      ng-click="scrollTo('top-section-accueil')"
+      class="back-to-top-link"
+      ><i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </section>
+
+  <svg
+    xmlns="https://www.w3.org/2000/svg"
+    style="margin-bottom: -0rem"
+    viewBox="0 0 1440 320"
+  >
+    <path
+      fill-opacity="1"
+      d="M0,224L34.3,234.7C68.6,245,137,267,206,266.7C274.3,267,343,245,411,234.7C480,224,549,224,617,213.3C685.7,203,754,181,823,197.3C891.4,213,960,267,1029,266.7C1097.1,267,1166,213,1234,192C1302.9,171,1371,181,1406,186.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+    ></path>
+  </svg>
+
+  <!-- Contact -->
+  <section class="light-section" id="Contact">
+    <div class="container">
+      <div
+        class="text-center font-size-small"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <h1 class="font-esthetic text-color-dark">Nous contacter</h1>
+
+        <p>
+          Si vous le souhaitez, vous pouvez nous contacter
+          <a href="mailto:celineetvincentsemarient@gmail.com">ici</a>.
+        </p>
+
+        <span class="mb-0"><strong> </strong></span>
+      </div>
+    </div>
+  </section>
+
+  <svg
+    xmlns="https://www.w3.org/2000/svg"
+    style="margin-bottom: -0rem; margin-top: -1rem"
+    viewBox="0 0 1440 320"
+  >
+    <path
+      fill="#FFEBDA"
+      fill-opacity="1"
+      d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+    ></path>
+  </svg>
+
+  <!-- Footer  -->
+  <footer class="dark-section">
+    <div class="container">
+      <div class="text-center">
+        <p data-aos="fade-up" data-aos-duration="1500"></p>
+
+        <hr />
+        <p>Crédits: A Chrimi production</p>
+        <p>CGV: Tout dépend de vos réponses au RSVP</p>
+        <p>CGU: A utiliser uniquement avec beaucoup d'amour</p>
+      </div>
+    </div>
+  </footer>
+</body>

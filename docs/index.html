@@ -189,35 +189,35 @@
         <li ng-class="{ active: isActive('/home')}" class="nav-item">
           <a class="nav-link" href="#Accueil">
             <i class="fas fa-home"></i>
-            <span class="d-block" style="font-size: 1rem">Accueil</span>
+            <span class="nav-bar-text" >Accueil</span>
           </a>
         </li>
 
         <li ng-class="{ active: isActive('/programme')}" class="nav-item">
           <a class="nav-link" href="#programme">
             <i class="fa-solid fa-calendar"></i>
-            <span class="d-block" style="font-size: 1rem">Programme</span>
+            <span class="nav-bar-text" >Programme</span>
           </a>
         </li>
 
         <li ng-class="{ active: isActive('/rsvp')}" class="nav-item">
           <a class="nav-link" href="#rsvp">
             <i class="fa-solid fa-envelope-circle-check"></i>
-            <span class="d-block" style="font-size: 1rem">RSVP</span>
+            <span class="nav-bar-text" >RSVP</span>
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" href="#logistique">
             <i class="fa-solid fa-person-walking-luggage"></i>
-            <span class="d-block" style="font-size: 1rem">Logistique</span>
+            <span class="nav-bar-text" >Logistique</span>
           </a>
         </li>
 
         <li ng-class="{ active: isActive('/listemariage')}" class="nav-item">
           <a class="nav-link" href="#listemariage">
             <i class="fa-solid fa-gifts"></i>
-            <span class="d-block" style="font-size: 1rem"
+            <span class="nav-bar-text" 
               >Liste de mariage</span
             >
           </a>
@@ -234,9 +234,9 @@
         <div class="text-center">
           <div id="debut-invitation">
             <h1
-              class="font-esthetic mb-4"
+              class="font-esthetic mb-4 text-black"
               id="texte-invitation"
-              style="font-size: 4rem; color: #111111 !important"
+              
             >
               Bienvenue sur le site de notre mariage !
             </h1>
@@ -310,26 +310,7 @@
       </div>
     </div>
 
-    <!-- Modal Photo Large -->
-    <div class="modal fade" id="modal-image" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content">
-          <div class="modal-body p-0">
-            <div
-              class="d-flex justify-content-center align-items-center"
-              style="height: 100%"
-            >
-              <img
-                src="./assets/images/bg.jpeg"
-                class="w-100"
-                alt="foto"
-                id="show-modal-image"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
 
     <!-- Dependencies JS -->
     <script
