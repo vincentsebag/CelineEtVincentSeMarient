@@ -227,6 +227,41 @@
     </nav>
 
     <ng-view></ng-view>
+    
+  <!-- Loading page -->
+  <div class="loading-page" id="loading" style="opacity: 1">
+    <div
+      class="d-flex justify-content-center align-items-center"
+      style="height: 100vh !important"
+    >
+      <div class="text-center w-75">
+        <img
+          class="img-fluid mb-3"
+          src="./assets/images/dove_746169.png"
+          alt="icon"
+          style="width: 3.5rem"
+        />
+        <div class="progress" role="progressbar" style="height: 0.5rem">
+          <div class="progress-bar" id="bar" style="width: 0%"></div>
+        </div>
+        <small
+          class="mt-1 text-light"
+          id="progress-info"
+          style="display: none; font-size: 1.5rem"
+          >Le pigeon voyageur charge...</small
+        >
+
+        <script>
+          document.getElementById("progress-info").style.display = "block";
+        </script>
+        <noscript>
+          <small class="mt-1 text-danger"
+            >Désolé, cette invitation nécessite javascript</small
+          >
+        </noscript>
+      </div>
+    </div>
+  </div>
 
     <!-- Welcome Page - on a un secret -->
     <div class="welcome-page" id="welcome" style="opacity: 1">
@@ -275,40 +310,7 @@
       <i class="fa-solid fa-circle-pause spin-button"></i>
     </button>
 
-    <!-- Loading page -->
-    <div class="loading-page" id="loading" style="opacity: 1">
-      <div
-        class="d-flex justify-content-center align-items-center"
-        style="height: 100vh !important"
-      >
-        <div class="text-center w-75">
-          <img
-            class="img-fluid mb-3"
-            src="./assets/images/dove_746169.png"
-            alt="icon"
-            style="width: 3.5rem"
-          />
-          <div class="progress" role="progressbar" style="height: 0.5rem">
-            <div class="progress-bar" id="bar" style="width: 0%"></div>
-          </div>
-          <small
-            class="mt-1 text-light"
-            id="progress-info"
-            style="display: none; font-size: 1.5rem"
-            >Le pigeon voyageur charge...</small
-          >
-
-          <script>
-            document.getElementById("progress-info").style.display = "block";
-          </script>
-          <noscript>
-            <small class="mt-1 text-danger"
-              >Désolé, cette invitation nécessite javascript</small
-            >
-          </noscript>
-        </div>
-      </div>
-    </div>
+  
 
 
 
