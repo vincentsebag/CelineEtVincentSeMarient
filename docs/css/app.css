@@ -660,6 +660,14 @@ footer {
     .collapsible-section .columns {
       flex-direction: column;
     }
+    .nav-bar-text{
+      display: flex;
+      justify-content: center;
+    }
+    .nav-link{ 
+      flex-direction: column;
+      display: flex;
+    }
     .logistic-section-links {
       flex-direction: column;
       gap: 10px 10px;
