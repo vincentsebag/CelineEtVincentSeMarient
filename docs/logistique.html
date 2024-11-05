@@ -20,7 +20,7 @@
     </div>
   </section>
 
-  <section class="light-section" id="intrologistique" >
+  <section class="light-section" id="intrologistique">
     <div
       class="text-center"
       style="width: 80%; margin-left: auto; margin-right: auto"
@@ -156,7 +156,7 @@
         ><br />
         Tel: 02 32 21 50 23
       </div>
-   
+
       <div class="grid-item">
         <a
           href="https://hotelaltina.com/"
@@ -363,23 +363,26 @@
                 >
                   <h3><i class="fas fa-taxi"></i> Taxis locaux</h3>
 
-                 <p>
-                      <strong>Taxi Bonnières-sur-Seine</strong><br />
-                      06 68 02 80 52
-                    </p><p>
-                      <strong>Taxi Mantes-la-Jolie</strong><br />
-                      01 30 94 75 75 – Allo taxi Mantes<br />
-                      07 75 10 42 82 <br />
-                      06 51 80 89 35
-                    </p><p>
-                      <strong>Taxi Vernon</strong><br />
-                      06 37 10 90 <br />
-                      03 06 42 54 08 68 <br />
-                      06 81 09 00 43
-                    </p><p>
-                      <strong>Taxi Héron</strong><br />
-                      02 57 53 69 20
-                    </p>
+                  <p>
+                    <strong>Taxi Bonnières-sur-Seine</strong><br />
+                    06 68 02 80 52
+                  </p>
+                  <p>
+                    <strong>Taxi Mantes-la-Jolie</strong><br />
+                    01 30 94 75 75 – Allo taxi Mantes<br />
+                    07 75 10 42 82 <br />
+                    06 51 80 89 35
+                  </p>
+                  <p>
+                    <strong>Taxi Vernon</strong><br />
+                    06 37 10 90 <br />
+                    03 06 42 54 08 68 <br />
+                    06 81 09 00 43
+                  </p>
+                  <p>
+                    <strong>Taxi Héron</strong><br />
+                    02 57 53 69 20
+                  </p>
                   <p>
                     <em class="text-color-dark"
                       >Il est conseillé de réserver votre taxi à l'avance.</em
@@ -409,28 +412,29 @@
     viewBox="0 0 1440 320"
   >
     <path
-      fill="#FFEBDA"
       fill-opacity="1"
       d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
     ></path>
   </svg>
 
   <!-- Section Que faire à côté -->
-  <section
-    class="dark-section text-center"
-    style="margin-top: -50px"
-    data-aos="fade-right"
-    data-aos-duration="2000"
-  >
+  <section class="dark-section text-center" style="margin-top: -50px">
     <div style="width: 80%; margin-left: auto; margin-right: auto">
-      <h1 class="font-esthetic text-color-light">Que faire dans le coin</h1>
-      <div style="margin-top: 10px" class="font-size-small">
-        <p>
-          Voici quelques idées d’activités si vous souhaitez prolonger un peu votre séjour :)
-  </p>
+      <div data-aos="fade-up" data-aos-duration="2000">
+        <h1 class="font-esthetic text-color-light">Que faire dans le coin</h1>
+        <div style="margin-top: 10px" class="font-size-small">
+          <p>
+            Voici quelques idées d’activités si vous souhaitez prolonger un peu
+            votre séjour :)
+          </p>
+        </div>
       </div>
-
-      <div ng-controller="LogistiqueController" class="activities-container">
+      <div
+        ng-controller="LogistiqueController"
+        class="activities-container"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <!-- Filtres -->
         <div class="filter-container">
           <div
@@ -454,18 +458,18 @@
                 <span class="logistic-activity-name font-esthetic font-size"
                   >{{activity.name}}</span
                 >
-                
-              <span class="category-icons">
-                <i
-                  ng-repeat="category in activity.categories"
-                  class="{{categoryIconMap[category]}}"
-                  aria-hidden="true"
-                  style="color: var(--dark-color); margin-left: 10px"
-                ></i>
-              </span>
+
+                <span class="category-icons">
+                  <i
+                    ng-repeat="category in activity.categories"
+                    class="{{categoryIconMap[category]}}"
+                    aria-hidden="true"
+                    style="color: var(--dark-color); margin-left: 10px"
+                  ></i>
+                </span>
                 <span class="summary-icon"></span>
               </summary>
-              <div class="font-size-small" style="padding: 10px;">
+              <div class="font-size-small" style="padding: 10px">
                 <p>
                   <em class="text-color-dark"
                     >Distance : {{activity.distance}}</em
@@ -523,7 +527,6 @@
     viewBox="0 0 1440 320"
   >
     <path
-      fill="#FFEBDA"
       fill-opacity="1"
       d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
     ></path>

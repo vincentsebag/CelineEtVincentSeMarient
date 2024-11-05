@@ -217,9 +217,17 @@ footer {
     position: fixed;
     width: 100%;
   }
+
+  .navbar {
+    margin-bottom: 10px;
+  }
+
   .nav-bar-text {
       font-size: 1rem;
     }
+  .navbar-nav {
+      margin: 6px 0px;
+  }
 
 .img-crop {
   width: 25vw;
@@ -238,7 +246,7 @@ footer {
 
 .btn-music {
   position: fixed;
-  bottom: 9vh !important;
+  bottom: 13vh !important;
   right: 2vh !important;
   z-index: 1055 !important;
 }
@@ -612,6 +620,15 @@ footer {
 }
 
 
+summary{
+
+  appearance: none;
+  -webkit-appearance: none; /* For Safari */
+  list-style: none; /* Remove bullet or arrow */
+  list-style-type: none; /* Hide the arrow icon */
+  cursor: pointer; /* Keep the clickable cursor */
+}
+
 
 
 
@@ -630,17 +647,40 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
+  .text-center-80 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+  }
+
+
+
   
   .column {
     float: left;
-    width: 50%;
+    width: 40%;
   }
+
+ .row {
+  display: flex;
+  flex-wrap: wrap; /* Allow columns to wrap to the next line on smaller screens */
+  justify-content: center; /* Center the content */
+}
   
-  
+
+
   .row:after {
     content: "";
     display: table;
     clear: both;
+  }
+
+  .column-lieux {
+    flex: 1 1 40%; /* Columns will take up 40% of the width, allowing for spacing */
+    box-sizing: border-box;
+    padding: 10px;
   }
 
 
@@ -654,11 +694,39 @@ footer {
 
 
   @media (max-width: 768px) {
+
+    .top-section-accueil {
+      
+      min-height: 30vh;
+    }
+
+    .back-to-top-link{
+      top: 10px;
+    }
+
+    .column-lieux[data-aos="fade-right"],
+  .column-lieux[data-aos="fade-left"] {
+    opacity: 1; /* Ensure the elements are visible */
+    transform: none; /* Remove any initial transform applied by AOS */
+    transition: none; /* Remove animation */
+  }
+    .column-lieux {
+      flex: 1 1 100%; 
+    }
     .hotel-grid-container {
       grid-template-columns: 1fr;
     }
     .collapsible-section .columns {
       flex-direction: column;
+      justify-content: center;
+  
+      width: 100%;
+    }
+    .collapsible-section .column {
+      flex-direction: column;
+      justify-content: center;
+  
+      width: 100%;
     }
     .nav-bar-text{
       display: flex;
