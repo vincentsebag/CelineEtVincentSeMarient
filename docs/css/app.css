@@ -423,6 +423,7 @@ footer {
   }
   
   .collapsible-section summary {
+   
     list-style: none;
     cursor: pointer;
     padding: 15px;
@@ -621,7 +622,7 @@ footer {
 
 
 summary{
-
+  
   appearance: none;
   -webkit-appearance: none; /* For Safari */
   list-style: none; /* Remove bullet or arrow */
@@ -629,11 +630,16 @@ summary{
   cursor: pointer; /* Keep the clickable cursor */
 }
 
+summary::marker {
+  display: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
 
 
 
-
-/* general calsses */
+/* general classes */
 
 
 .hidden {
