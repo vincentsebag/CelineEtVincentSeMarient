@@ -5,7 +5,7 @@
   app.config(function ($routeProvider) {
     $routeProvider
       .when("/", {
-        templateUrl: "home.html",
+        templateUrl: "restructuration.html", //home.html
       })
       .when("/programme", {
         templateUrl: "programme.html",
