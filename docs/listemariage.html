@@ -3,6 +3,7 @@
 
     <link rel="stylesheet" href="./css/app.css">
     <script src="./js/app.js" defer></script>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
     <meta name="robots" content="noindex">
     <title> Céline et Vincent se marient</title>
     </head>    
@@ -29,24 +30,33 @@
       </section>
   
       <!-- L'overview programme  -->
-      <section
-        class="light-section"
-        id="programmedetaille"
-        style="position: float; height : 70vh;"
-        
-      >
-        <div
-          class="text-center"
-          style="width: 80%; margin-left: auto; margin-right: auto; min-height : 100%"
+        <section
+          class="light-section"
+          id="programmedetaille"
+          style="position: float; padding-bottom:2rem;"
         >
-          <h1
-            class="font-esthetic my-4 text-center text-color-dark"
-            style="position: relative; text-align: center"
+          <div
+            class="text-center"
+            style="width: 80%; margin-left: auto; margin-right: auto;"
           >
-            En construction 
-          </h1>
-        </div>
-      </section>
+            <p class="my-4" style="font-size: 1.2rem;">
+              Nous vous remercions infiniment pour votre présence et votre soutien.&nbsp;
+              Plutôt qu'une liste d'objets, nous souhaitons financer notre lune de miel.
+              Si le cœur vous en dit, vous pouvez participer ci-dessous.
+            </p>
+            <ul style="list-style:none; padding:0; font-size:1.2rem;">
+              <li class="my-2">
+                <stripe-buy-button buy-button-id="buy_btn_tahiti" publishable-key="pk_test_XXXX"></stripe-buy-button>
+              </li>
+              <li class="my-2">
+                <stripe-buy-button buy-button-id="buy_btn_galapagos" publishable-key="pk_test_XXXX"></stripe-buy-button>
+              </li>
+              <li class="my-2">
+                <stripe-buy-button buy-button-id="buy_btn_bali" publishable-key="pk_test_XXXX"></stripe-buy-button>
+              </li>
+            </ul>
+          </div>
+        </section>
   
     </body>
         
