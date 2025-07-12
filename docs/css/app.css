@@ -779,5 +779,33 @@ summary::-webkit-details-marker {
     }
   }
 
+
+/* container that holds the buttons */
+.stripe-buttons{
+  display:flex;
+  flex-wrap:wrap;             /* wrap on narrow screens */
+  gap:1.25rem;                /* space between buttons */
+  justify-content:center;
+  max-width:90%;
+  margin-inline:auto;
+}
+
+/* each Stripe button behaves like a flex-item */
+.stripe-buttons stripe-buy-button{
+  flex:1 1 320px;             /* 1 = flex-grow, 1 = flex-shrink, 320 px min-width */
+  max-width:380px;            /* never larger than this */
+}
+
+/* optional: visually scale down on very narrow screens */
+@media(max-width:400px){
+  .stripe-buttons stripe-buy-button{
+    transform:scale(.85);
+    transform-origin:top center;
+  }
+}
+ 
+
+
+
  
 
