@@ -21,6 +21,9 @@
       .when("/listemariage", {
         templateUrl: "listemariage.html",
       })
+      .when("/listemariagebeta", {
+        templateUrl: "listemariagebeta.html",
+      })
       .otherwise({ redirectTo: "/" });
   });
 
